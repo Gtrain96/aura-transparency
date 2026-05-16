@@ -152,6 +152,6 @@ honest answer is yes, an AI-assisted process produced it, reviewed by a
 qualified human. Operators are free to phrase this in their own voice.
 What they are not free to do is deny it.
 
-That's the moat. Vibes-coded chat tools cannot make this commitment without
-also undertaking the supervision, gate-preservation, and audit obligations.
+Conversational chat tools cannot make this commitment without also
+undertaking the supervision, gate-preservation, and audit obligations.
 The Aura platform makes the commitment binding from day one.

@@ -362,6 +362,117 @@ with respect to the Work and supersedes all prior or contemporaneous
 communications, proposals, or representations with respect thereto.
 
 
+--------------------------------------------------------------------------------
+§15. CITATIONS AND SOURCES
+--------------------------------------------------------------------------------
+
+The following works are normative sources to which this License refers
+and which any Derivative Work or operator of a Fiduciary System
+incorporating the Work SHALL preserve in any redistribution. These
+citations are integral to the License and not merely informational.
+
+A. CFA INSTITUTE — NORMATIVE STANDARDS
+
+1.  CFA Institute, "Code of Ethics and Standards of Professional
+    Conduct," 12th edition (2014, as amended). Standards I through VII.
+    Available: https://www.cfainstitute.org/en/ethics-standards/codes/code-ethics-standards-of-professional-conduct
+
+2.  CFA Institute, "Standards of Practice Handbook," 12th edition (2014,
+    as amended). Available: https://www.cfainstitute.org/-/media/documents/code/code-ethics-standards/standards-practice-handbook-12th-ed.pdf
+
+3.  CFA Institute Research and Policy Center, "AI and Big Data in
+    Investments: A Practitioner's Framework." Cited at §4.1 (Ethics
+    Addendum) and §11 (Disclaimer of Warranty) of this License.
+
+The §4 obligations are intended to operationalize, not replace,
+the CFA Institute Standards. In any conflict between the language of
+this License and the binding interpretation of the CFA Institute
+Standards by the CFA Institute Disciplinary Review Committee or
+equivalent body, the CFA Institute interpretation controls for any
+party who is or holds themselves out as a CFA charterholder, candidate,
+or member.
+
+B. SOFTWARE DEVELOPMENT POLICIES (REPO-INTERNAL)
+
+The Work is developed under the discipline of the following in-repo
+policy documents, which any Derivative Work SHOULD preserve or replace
+with functionally equivalent disciplines:
+
+4.  `CLAUDE.md` — Multi-Agent Git Protocol; Karpathy-inspired coding
+    disciplines (think before coding, simplicity first, surgical
+    changes, goal-driven execution); domain isolation rules;
+    configuration-driven design; digital twin pattern; fail-closed
+    operation.
+
+5.  `docs/active-tasks/aura-rfp-deterministic-architecture.md` — the
+    deterministic-first architecture, three-tier memory coordination,
+    HITL classification at intake, audience-tiered AI disclosure
+    (§4.1.1).
+
+6.  `INTERFACE_CONTRACTS.md` — frozen function signatures for the
+    pure-math domain.
+
+7.  `AGENT.md` — agent governance protocols.
+
+C. SAFETY INFRASTRUCTURE
+
+8.  Google Cloud Model Armor — the GCP-native prompt-injection and
+    PII-screening layer wrapped around every Vertex AI call by Aura.
+    Available: https://cloud.google.com/security-command-center/docs/model-armor-overview
+
+    Per §4.3 (Provenance Preservation), any Fiduciary System derived
+    from the Work must use Model Armor or a functionally equivalent
+    pre-Gemini safety layer; "naked" Vertex calls are a breach.
+
+D. PROVENANCE AND TAMPER-EVIDENCE STANDARDS
+
+9.  C2PA — Coalition for Content Provenance and Authenticity, content
+    credentials specification. https://c2pa.org/
+
+10. Adobe Content Authenticity Initiative (CAI), content credentials
+    framework. https://contentauthenticity.org/
+
+11. OpenTimestamps Protocol — optional public-chain anchoring of the
+    Work's hash chains. https://opentimestamps.org/
+
+The §5 (Tamper-Evident Receipts) requirement is informed by these
+standards. An operator who adopts C2PA, CAI, or OpenTimestamps for
+their receipt substance satisfies §5 by construction.
+
+E. ARCHITECTURAL INSPIRATIONS (CREDIT)
+
+12. Andrej Karpathy's public observations on LLM coding pitfalls
+    (various 2024-2026 talks and posts), as adopted into Aura's
+    in-repo coding disciplines (see Citation 4).
+
+13. xAI's `grok-prompts` public repository pattern, which informed the
+    decision to publish persona system instructions under this License
+    rather than retain them as trade secret.
+
+14. Google DeepMind's "AI Pointer" and Farza Majeed's "Clicky" project,
+    which inform the post-demo ambient-cursor backlog (see
+    `docs/active-tasks/ambient-cursor-lane-backlog.md`).
+
+F. RE-LICENSE COMPATIBILITY
+
+15. Apache License 2.0 — this License's grants in §2 and §3 are modeled
+    on Apache 2.0; Derivative Works combining the Work with Apache 2.0
+    code are compatible if §4 obligations are also satisfied. The §4
+    obligations are an addition, not a contradiction.
+
+16. RAIL — Responsible AI License framework. This License is a
+    bespoke instance of the same Source-Available · Ethics-Restricted
+    pattern that RAIL family licenses (BigScience BLOOM RAIL,
+    Stability AI OpenRAIL-M) inhabit; cited as prior art for the
+    licensing pattern.
+
+PRESERVATION OBLIGATION. Any Derivative Work SHALL preserve §15
+(Citations and Sources) verbatim, OR replace each citation with the
+then-current equivalent (e.g., later edition of the CFA Standards,
+updated Google Cloud Model Armor URL). Removing the citations
+without substitution is a §4.3 (Provenance Preservation) breach.
+
+
                                   END OF TERMS
 
 ================================================================================

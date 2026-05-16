@@ -1,0 +1,385 @@
+                    AURA ETHICS LICENSE
+                          Version 1.0
+                    DRAFT v0.1 — 2026-05-16
+                  Pending Counsel Review · Not Final
+
+
+  Copyright (c) 2026 Ian Gilbert ("Creator")
+
+  This Source Code, the associated documentation, system instructions,
+  evaluation harnesses, configuration schemas, and synthetic seed data
+  (collectively, the "Work") are made available under the terms set
+  forth below. By exercising any right granted herein, You accept and
+  agree to be bound by this License in full.
+
+
+--------------------------------------------------------------------------------
+PREAMBLE
+--------------------------------------------------------------------------------
+
+The Work is a deterministic-first framework for issuing investment-related
+responses through systems that combine large language models with auditable
+provenance gates. It is published under this License to advance professional
+practice, transparency, and the fiduciary standard articulated by the CFA
+Institute Code of Ethics and Standards of Professional Conduct.
+
+Conversational language-model systems, used in isolation, are not suitable
+for the discharge of fiduciary duties. This License grants permissive rights
+to use the Work, conditioned on preservation of the deterministic gates and
+disclosures that make the Work auditable. This License is "Source-Available
+· Ethics-Restricted" and is NOT an Open Source license under the Open Source
+Initiative's definition.
+
+
+--------------------------------------------------------------------------------
+§1. DEFINITIONS
+--------------------------------------------------------------------------------
+
+"License"            means the terms and conditions of this Aura Ethics
+                     License v1.0.
+
+"Work"               means the source code, configuration, documentation,
+                     system instructions, evaluation harnesses, and synthetic
+                     seed data made available under this License.
+
+"Derivative Work"    means any modification, translation, port, or work based
+                     on the Work, excluding works that merely link to,
+                     interoperate with, or invoke the Work via stable APIs.
+
+"You" or "Licensee"  means any individual or legal entity exercising rights
+                     under this License, including their employees and agents
+                     acting on their behalf.
+
+"Creator"            means Ian Gilbert, the original author of the Work, and
+                     for the purposes of §6 includes Ian Gilbert in any
+                     personal, employed, contracted, or successor capacity.
+
+"Confidential Data"  means: (i) client identifiers, account data, or
+                     portfolio holdings of any natural or legal person;
+                     (ii) proprietary Capital Market Assumption inputs
+                     licensed from third-party vendors; (iii) personally
+                     identifiable information of any natural person;
+                     (iv) any data classified as Confidential under the
+                     then-current information security policy of any
+                     organization that has lawfully acquired such data.
+
+"Fiduciary System"   means any system that issues output to a third party
+                     in connection with the offer, sale, recommendation,
+                     analysis, or management of securities, investment
+                     strategies, or asset allocation.
+
+"Provenance Gates"   means the deterministic gates shipped with the Work,
+                     comprising at minimum: (a) Human-in-the-Loop ("HITL")
+                     classification of partition labels at intake; (b)
+                     Row-Level Security ("RLS") partition enforcement at
+                     the data layer; (c) source pointer hash binding for
+                     every numeric claim; (d) truth-table validation
+                     before output; and (e) fail-closed routing of
+                     unsourced claims to qualified human review.
+
+"CFA Standards"      means the CFA Institute Code of Ethics and Standards
+                     of Professional Conduct (I through VII), as amended
+                     from time to time, available at cfainstitute.org.
+
+
+--------------------------------------------------------------------------------
+§2. GRANT OF COPYRIGHT LICENSE
+--------------------------------------------------------------------------------
+
+Subject to the terms of this License, the Creator grants You a worldwide,
+royalty-free, non-exclusive, irrevocable (except as stated in §8) copyright
+license to reproduce, prepare Derivative Works of, publicly display, publicly
+perform, sublicense, and distribute the Work and such Derivative Works in
+source or binary form.
+
+
+--------------------------------------------------------------------------------
+§3. GRANT OF PATENT LICENSE
+--------------------------------------------------------------------------------
+
+Subject to the terms of this License, the Creator grants You a worldwide,
+royalty-free, non-exclusive, irrevocable (except as stated in this section)
+patent license to make, have made, use, offer to sell, sell, import, and
+otherwise transfer the Work, where such license applies only to those patent
+claims licensable by the Creator that are necessarily infringed by the Work
+alone or by combination of the Work with the Work to which it was submitted.
+
+If You institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work or a
+contribution incorporated within the Work constitutes direct or contributory
+patent infringement, then the patent licenses granted to You under this
+License for the Work shall terminate as of the date such litigation is filed.
+
+
+--------------------------------------------------------------------------------
+§4. CONDITIONS OF USE — ETHICS ADDENDUM
+--------------------------------------------------------------------------------
+
+The rights granted in §2 and §3 are conditioned on Your compliance with
+each of the following obligations. These obligations are binding on
+developers and users of the Work alike.
+
+§4.1  Supervision.  If You use, modify, or distribute the Work as a
+      component of any Fiduciary System, that Fiduciary System shall
+      operate under the supervision of a CFA charterholder or an
+      equivalent fiduciary professional licensed in the jurisdiction in
+      which the Fiduciary System is deployed.
+
+§4.2  Disclosure.  If output of a Fiduciary System incorporating the Work
+      is delivered to a client, prospective client, or other third party,
+      You shall ensure that the involvement of language-model components
+      in producing or shaping such output is disclosed in a manner
+      reasonably calculated to reach the recipient. The form, granularity,
+      and audience of such disclosure may vary (see §4.2.1).
+
+§4.2.1 Audience-Tiered Disclosure.  Nothing in this License requires
+      disclosure of internal model identifiers, prompt text, or proprietary
+      implementation details to external recipients. Disclosure under §4.2
+      is satisfied by a statement that the output is the product of a
+      reviewed, AI-assisted process operating under CFA-aligned controls.
+      Internal disclosure to qualified reviewers, auditors, and regulators
+      shall be more granular and shall include the Provenance Gates'
+      decision records sufficient to reconstruct the output.
+
+§4.3  Provenance Preservation.  You shall preserve the Provenance Gates
+      shipped with the Work in any Fiduciary System You deploy, or
+      replace them with functionally equivalent gates that meet or exceed
+      the same audit standard. You shall not strip, disable, or
+      circumvent any Provenance Gate as a means of producing output that
+      would otherwise fail validation.
+
+§4.4  No Deception.  You shall not use the Work to generate, distribute,
+      or shape any communication that misrepresents the role of
+      automated systems in producing such communication, or that is
+      designed to evade applicable disclosure obligations under CFA
+      Standards V(B), V(C), or analogous regimes.
+
+§4.5  CFA Standard VII Compliance.  If You hold the CFA charter, are a
+      CFA candidate, or otherwise hold Yourself out as a CFA Institute
+      member or member-in-training, Your use of the Work shall comply
+      with CFA Standard VII (Responsibilities as a CFA Institute Member
+      or CFA Candidate) regardless of any contrary direction from Your
+      employer.
+
+§4.6  Faith-Stance Neutrality.  The Work supports configurable faith-based
+      and secular partitioning of its knowledge corpus. This License is
+      neutral as to faith stance. You shall not use the Work to ridicule,
+      attack, or systematically disadvantage any faith community whose
+      screening criteria are supported by the Work's partitioning system.
+
+§4.7  Open-Weights Compatibility.  The conditions of this §4 apply
+      regardless of whether the language-model component invoked by the
+      Work is proprietary, hosted, or open-weights, provided that the
+      Provenance Gates remain in force.
+
+
+--------------------------------------------------------------------------------
+§5. TAMPER-EVIDENT RECEIPTS
+--------------------------------------------------------------------------------
+
+Any output of a Fiduciary System incorporating the Work that is delivered
+to a third party shall carry, or shall be accompanied on request by, a
+machine-readable receipt comprising at minimum: (i) the source pointer
+hashes for all numeric claims in the output; (ii) the RLS partition
+identifier in effect during retrieval; (iii) the decision records of all
+Provenance Gates that fired during composition; and (iv) the version
+identifier of the Work used to produce the output.
+
+You may equivalently use a receipt of Your own design that records the
+same audit substance.
+
+
+--------------------------------------------------------------------------------
+§6. CREATOR'S PORTABILITY RIGHT
+--------------------------------------------------------------------------------
+
+Notwithstanding any employment agreement, work-for-hire arrangement,
+assignment, license, or other instrument that the Creator has entered or
+may enter into, the Creator retains a perpetual, worldwide, royalty-free,
+non-exclusive, irrevocable, sublicensable license to use, modify,
+distribute, and create Derivative Works of those portions of the Work
+authored by the Creator that have been:
+
+  (a) released under this License in a publicly accessible repository
+      bearing this License or a substantially equivalent successor; AND
+
+  (b) certified by the Creator at the time of release to contain no
+      Confidential Data as defined in §1.
+
+This right survives any termination of any other agreement and may be
+exercised through any subsequent project, employer, organization, or
+medium of the Creator's choosing. It does not extend to:
+
+  (i) Confidential Data, which remains the property of the lawful
+      possessor and is not licensed hereunder;
+
+  (ii) data, code, or contributions authored by others and contributed
+       to the Work under separate terms; or
+
+  (iii) trademarks, service marks, or trade names of any organization
+        other than the Creator personally.
+
+For the avoidance of doubt: when the Creator commits source code, system
+instructions, configuration schemas, evaluation harnesses, design tokens,
+or other works of authorship to a repository governed by this License, and
+certifies that no Confidential Data is included, the Creator may
+independently use, copy, modify, and redistribute those works through any
+future project of any future employer, including through public
+repositories and commercial products that do not incorporate Confidential
+Data.
+
+
+--------------------------------------------------------------------------------
+§7. DATA SEGREGATION
+--------------------------------------------------------------------------------
+
+This License grants rights to the source code, configuration schemas,
+system instructions, evaluation harnesses, design tokens, and synthetic
+seed data comprising the Work. No rights are granted to Confidential
+Data, which is excluded from the Work by definition.
+
+Any corpus, dataset, or benchmark distributed in or with the Work shall
+consist solely of (i) synthetic examples generated for testing purposes;
+(ii) public examples whose redistribution is authorized by their original
+license; or (iii) examples explicitly approved for public release by all
+parties with rights in the underlying data.
+
+Where the Work originally operated against Confidential Data within an
+organization's infrastructure, redistribution of equivalent functionality
+under this License requires substitution of synthetic, public, or approved
+data of equivalent shape. Hashing, tokenization, or other masking of
+Confidential Data does not, by itself, convert such data into data
+licensable under this License; masking is a privacy control, not a license
+grant.
+
+
+--------------------------------------------------------------------------------
+§8. TERMINATION
+--------------------------------------------------------------------------------
+
+The rights granted under this License shall terminate automatically upon
+any material breach of §4 or §5 that is not cured within thirty (30) days
+of Your receipt of written notice of such breach from any party with
+standing to assert the breach (including the Creator, an affected client,
+or a regulator with jurisdiction).
+
+Upon termination, You shall cease all use, distribution, and Derivative
+Work preparation of the Work, and shall not initiate any new Fiduciary
+System incorporating the Work. Termination does not affect the validity
+of receipts already delivered under §5 nor obligations of disclosure
+already triggered under §4.2.
+
+The Creator's rights under §6 are not affected by termination of any
+other party's rights under this License.
+
+
+--------------------------------------------------------------------------------
+§9. PUBLIC AUDIT RIGHT
+--------------------------------------------------------------------------------
+
+Any natural or legal person may request, in writing, that the operator of
+a deployed Fiduciary System incorporating the Work provide:
+
+  (a) the version identifier of the Work in use;
+  (b) the system instructions configured for each persona;
+  (c) the Provenance Gate rule packs in force; and
+  (d) summary benchmark scores from the most recent eval cycle.
+
+The operator shall respond within thirty (30) days. The operator may
+withhold (i) Confidential Data, (ii) information whose disclosure would
+violate applicable law, and (iii) information whose disclosure would
+compromise the security of the system itself, but shall identify the
+categories withheld. This obligation echoes CFA Standard III(D) on
+Performance Presentation.
+
+
+--------------------------------------------------------------------------------
+§10. ATTRIBUTION
+--------------------------------------------------------------------------------
+
+You shall retain, in any redistribution of the Work or any Derivative
+Work, all copyright notices, this License text, the file named ETHICS.md,
+the file named PORTABILITY.md, and any NOTICE file shipped with the Work.
+
+You may add Your own copyright notices to portions of the Derivative Work
+authored by You.
+
+
+--------------------------------------------------------------------------------
+§11. DISCLAIMER OF WARRANTY
+--------------------------------------------------------------------------------
+
+THE WORK IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT
+LIMITATION ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT,
+MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
+
+WITHOUT LIMITING THE FOREGOING: THE LANGUAGE-MODEL COMPONENTS THAT THE
+WORK INVOKES OR DEPENDS UPON ARE GENERAL-PURPOSE CONVERSATIONAL SYSTEMS
+AND ARE NOT SUITABLE, IN ISOLATION, FOR THE DISCHARGE OF FIDUCIARY DUTIES
+UNDER ERISA §404, THE INVESTMENT ADVISERS ACT OF 1940 §206, THE CFA
+INSTITUTE CODE OF ETHICS AND STANDARDS OF PROFESSIONAL CONDUCT, OR ANY
+ANALOGOUS REGIME. OUTPUTS OF LANGUAGE-MODEL COMPONENTS ARE ADVISORY
+INPUTS TO A QUALIFIED HUMAN REVIEWER AND DO NOT CONSTITUTE INVESTMENT
+ADVICE. YOU ARE SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF
+USING THE WORK AND ASSUME ANY RISKS ASSOCIATED WITH YOUR EXERCISE OF
+RIGHTS UNDER THIS LICENSE.
+
+
+--------------------------------------------------------------------------------
+§12. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+
+IN NO EVENT AND UNDER NO LEGAL THEORY (WHETHER IN TORT, CONTRACT, OR
+OTHERWISE) SHALL THE CREATOR BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY
+CHARACTER ARISING AS A RESULT OF THIS LICENSE OR OUT OF THE USE OR
+INABILITY TO USE THE WORK, EVEN IF THE CREATOR HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+NOTHING IN THIS LICENSE SHALL BE CONSTRUED TO LIMIT THE CREATOR'S
+LIABILITY FOR INTENTIONAL FRAUD OR GROSS NEGLIGENCE WHERE SUCH LIMITATION
+IS PROHIBITED BY APPLICABLE LAW.
+
+
+--------------------------------------------------------------------------------
+§13. SEVERABILITY AND GOVERNING LAW
+--------------------------------------------------------------------------------
+
+If any provision of this License is held to be unenforceable, the
+remaining provisions shall continue in full force and effect. This
+License shall be governed by and construed in accordance with the laws
+of the State of Colorado, United States, without regard to its
+conflict-of-laws provisions.
+
+
+--------------------------------------------------------------------------------
+§14. ENTIRE AGREEMENT
+--------------------------------------------------------------------------------
+
+This License constitutes the entire agreement between the Creator and You
+with respect to the Work and supersedes all prior or contemporaneous
+communications, proposals, or representations with respect thereto.
+
+
+                                  END OF TERMS
+
+================================================================================
+                                STATUS NOTICE
+================================================================================
+
+This License is published as DRAFT v0.1 pending review by qualified legal
+counsel. The substance of the License — in particular §4 (Ethics
+Addendum), §5 (Tamper-Evident Receipts), §6 (Creator's Portability
+Right), and §9 (Public Audit Right) — reflects the Creator's intent but
+has not been validated for enforceability in any jurisdiction.
+
+Parties relying on this License for production deployment SHOULD await
+the v1.0 final release. Pre-v1.0 deployments are at Your own risk and
+the Creator reserves the right to clarify or amend the License terms
+through the v1.0 final release.
+
+For correspondence regarding this License, contact the Creator via the
+repository at github.com/Gtrain96/aura-transparency.
+
+================================================================================

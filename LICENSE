@@ -4,7 +4,7 @@
                   Pending Counsel Review · Not Final
 
 
-  Copyright (c) 2026 Ian Gilbert ("Creator")
+  Copyright (c) 2026 Ian Gilbert and Trevor Kirking ("Creators")
 
   This Source Code, the associated documentation, system instructions,
   evaluation harnesses, configuration schemas, and synthetic seed data
@@ -50,9 +50,17 @@ Initiative's definition.
                      under this License, including their employees and agents
                      acting on their behalf.
 
-"Creator"            means Ian Gilbert, the original author of the Work, and
-                     for the purposes of §6 includes Ian Gilbert in any
-                     personal, employed, contracted, or successor capacity.
+"Creator(s)"         means Ian Gilbert and Trevor Kirking, the original
+                     authors of the Work, jointly and severally. For the
+                     purposes of §6, "Creator" includes each named
+                     individual in any personal, employed, contracted, or
+                     successor capacity. The §6 Portability Right vests
+                     individually in each Creator with respect to that
+                     Creator's own authored contributions; joint works
+                     authored by both Creators carry a §6 right for each.
+                     Where this License uses "Creator" in the singular,
+                     it refers to either or both Creators as the context
+                     requires.
 
 "Confidential Data"  means: (i) client identifiers, account data, or
                      portfolio holdings of any natural or legal person;
